@@ -152,6 +152,7 @@ textarea {
 /* Hero Content */
 
 .hero-content {
+    padding-top:10px ;
     max-width: 620px;
 }
 
@@ -1210,6 +1211,15 @@ textarea {
         padding: 75px 0;
         
     }
+
+    .section-heading {
+        margin-bottom: 38px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
 
     
 
