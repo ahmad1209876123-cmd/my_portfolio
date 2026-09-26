@@ -1,0 +1,847 @@
+:root {
+    --primary-color: #2563eb;
+    --primary-dark: #1d4ed8;
+    --secondary-color: #0f172a;
+
+    --text-dark: #0f172a;
+    --text-light: #64748b;
+    --white: #ffffff;
+
+    --bg-light: #f8fafc;
+    --bg-soft: #eff6ff;
+
+    --border-color: #e2e8f0;
+
+    --shadow-sm: 0 8px 25px rgba(15, 23, 42, 0.06);
+    --shadow-md: 0 15px 40px rgba(15, 23, 42, 0.10);
+
+    --radius-sm: 10px;
+    --radius-md: 18px;
+    --radius-lg: 28px;
+
+    --transition: all 0.3s ease;
+}
+
+
+/* =====================================================
+   02. RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--text-dark);
+    background: var(--white);
+    line-height: 1.7;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+
+/* =====================================================
+   03. COMMON
+===================================================== */
+
+.container {
+    width: min(1120px, 92%);
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 15px;
+
+    color: var(--primary-color);
+    background: var(--bg-soft);
+
+    border-radius: 50px;
+
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin-top: 15px;
+
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.section-heading h2 span {
+    color: var(--primary-color);
+}
+
+.section-heading p {
+    margin-top: 18px;
+
+    color: var(--text-light);
+    font-size: 15px;
+}
+
+.small-title {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: var(--primary-color);
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+
+
+
+/* =====================================================
+   05. ABOUT HERO
+===================================================== */
+
+
+/* =====================================================
+   05. ABOUT HERO
+===================================================== */
+
+.about-hero {
+    position: relative;
+
+    padding: 105px 0 100px;
+
+    background-image:
+        linear-gradient(
+            rgba(15, 23, 42, 0.68),
+            rgba(15, 23, 42, 0.68)
+        ),
+        url("../portfolio-images/about-imgs/about-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+/* ---------- Hero Content ---------- */
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 780px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* ---------- Hero Badge ---------- */
+
+.about-hero .section-badge {
+    color: #ffffff;
+    background: rgba(37, 99, 235, 0.85);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    text-shadow: none;
+}
+
+
+/* ---------- Hero Heading ---------- */
+
+.about-hero h1 {
+    position: relative;
+
+    margin-top: 20px;
+
+    color: #ffffff;
+
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.12;
+    font-weight: 800;
+
+    letter-spacing: -1.5px;
+
+    text-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ---------- Blue Heading Text ---------- */
+
+.about-hero h1 span {
+    color: #60a5fa;
+
+    text-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ---------- Hero Paragraph ---------- */
+
+.about-hero p {
+    position: relative;
+
+    max-width: 650px;
+
+    margin: 22px auto 0;
+
+    color: #f1f5f9;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    font-weight: 400;
+
+    text-shadow:
+        0 1px 6px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =====================================================
+   06. ABOUT INTRO
+===================================================== */
+
+.about-intro {
+    background: var(--white);
+}
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image img {
+    height: 540px;
+
+    object-fit: cover;
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-md);
+}
+
+.experience-card {
+    position: absolute;
+
+    right: -30px;
+    bottom: 30px;
+
+    width: 180px;
+
+    padding: 22px 20px;
+
+    background: var(--white);
+
+    border-radius: 16px;
+
+    box-shadow: var(--shadow-md);
+
+    text-align: center;
+}
+
+.experience-card strong {
+    display: block;
+
+    color: var(--primary-color);
+
+    font-size: 38px;
+    line-height: 1;
+}
+
+.experience-card span {
+    display: block;
+
+    margin-top: 8px;
+
+    color: var(--text-light);
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.about-content h2 {
+    max-width: 600px;
+
+    font-size: clamp(30px, 4vw, 45px);
+    line-height: 1.2;
+}
+
+.about-content h2 span {
+    color: var(--primary-color);
+}
+
+.about-content > p {
+    margin-top: 18px;
+
+    color: var(--text-light);
+
+    font-size: 15px;
+}
+
+.about-info {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin: 30px 0;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    padding: 16px;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 12px;
+
+    transition: var(--transition);
+}
+
+.info-item:hover {
+    border-color: rgba(37, 99, 235, 0.3);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-sm);
+}
+
+.info-item > i {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: var(--primary-color);
+    background: var(--bg-soft);
+
+    border-radius: 10px;
+}
+
+.info-item strong {
+    display: block;
+
+    font-size: 13px;
+}
+
+.info-item span {
+    display: block;
+
+    margin-top: 2px;
+
+    color: var(--text-light);
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   07. PRIMARY BUTTON
+===================================================== */
+
+.primary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 13px 22px;
+
+    color: var(--white);
+    background: var(--primary-color);
+
+    border-radius: 10px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: var(--transition);
+}
+
+.primary-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+}
+
+
+/* =====================================================
+   08. APPROACH
+===================================================== */
+
+.approach {
+    background: var(--bg-light);
+}
+
+.approach-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.approach-card {
+    position: relative;
+
+    padding: 35px 30px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-sm);
+
+    transition: var(--transition);
+
+    overflow: hidden;
+}
+
+.approach-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(37, 99, 235, 0.25);
+    box-shadow: var(--shadow-md);
+}
+
+.approach-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    color: var(--primary-color);
+    background: var(--bg-soft);
+
+    border-radius: 14px;
+
+    font-size: 20px;
+}
+
+.approach-card > span {
+    position: absolute;
+
+    top: 25px;
+    right: 25px;
+
+    color: #cbd5e1;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.approach-card h3 {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+}
+
+.approach-card p {
+    color: var(--text-light);
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   09. VALUES
+===================================================== */
+
+.values {
+    background: var(--white);
+}
+
+.values-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.value-card {
+    padding: 30px 24px;
+
+    text-align: center;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: var(--radius-md);
+
+    transition: var(--transition);
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(37, 99, 235, 0.25);
+
+    box-shadow: var(--shadow-sm);
+}
+
+.value-card > i {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 18px;
+
+    color: var(--primary-color);
+    background: var(--bg-soft);
+
+    border-radius: 14px;
+
+    font-size: 19px;
+}
+
+.value-card h3 {
+    margin-bottom: 8px;
+
+    font-size: 17px;
+}
+
+.value-card p {
+    color: var(--text-light);
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   10. CTA
+===================================================== */
+
+/* =====================================================
+   10. CTA
+===================================================== */
+
+.about-cta {
+    padding: 110px 0;
+
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.84),
+            rgba(23, 37, 84, 0.84)
+        ),
+        url("../portfolio-images/about-imgs/cta-background-img-about.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-bottom: 6px solid #ffffff;
+}
+
+.cta-content {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.cta-content .section-badge {
+    color: #bfdbfe;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.cta-content h2 {
+    margin-top: 20px;
+
+    color: var(--white);
+
+    font-size: clamp(32px, 5vw, 50px);
+    line-height: 1.2;
+}
+
+.cta-content h2 span {
+    color: #60a5fa;
+}
+
+.cta-content p {
+    max-width: 600px;
+
+    margin: 18px auto 30px;
+
+    color: #cbd5e1;
+
+    font-size: 15px;
+}
+
+
+
+
+
+
+/* =====================================================
+   12. TABLET
+===================================================== */
+
+@media (max-width: 992px) {
+
+  
+
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 45px;
+    }
+
+    .about-image img {
+        height: 470px;
+    }
+
+    .experience-card {
+        right: -15px;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+   
+}
+
+
+/* =====================================================
+   13. MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .section-padding {
+        padding: 75px 0;
+    }
+
+
+    /* About Hero */
+
+  .about-hero {
+    padding: 80px 0 75px;
+}
+
+.about-hero h1 {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.about-hero p {
+    font-size: 14px;
+    color: #f1f5f9;
+}
+
+
+    /* About Intro */
+
+    .about-grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .about-image {
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    .about-image img {
+        height: 450px;
+    }
+
+    .experience-card {
+        right: 15px;
+        bottom: 20px;
+    }
+
+    .about-content h2 {
+        font-size: 34px;
+    }
+
+    .about-content > p {
+        font-size: 14px;
+    }
+
+    .about-info {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Approach */
+
+    .approach-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 550px;
+
+        margin: 0 auto;
+    }
+
+
+    /* Values */
+
+    .values-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* CTA */
+
+    .about-cta {
+        padding: 75px 0;
+    }
+
+    .cta-content h2 {
+        font-size: 35px;
+    }
+
+
+  
+}
+
+
+/* =====================================================
+   14. SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: min(92%, 100%);
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+  .about-hero {
+    padding: 65px 0;
+}
+
+.about-hero h1 {
+    font-size: 34px;
+    color: #ffffff;
+}
+
+.about-hero p {
+    font-size: 13px;
+    color: #f1f5f9;
+}
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .about-image img {
+        height: 390px;
+    }
+
+    .experience-card {
+        width: 150px;
+
+        padding: 17px 12px;
+
+        right: 10px;
+    }
+
+    .experience-card strong {
+        font-size: 30px;
+    }
+
+    .experience-card span {
+        font-size: 10px;
+    }
+
+    .about-content h2 {
+        font-size: 29px;
+    }
+
+    .info-item {
+        padding: 13px;
+    }
+
+    .primary-btn {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-content h2 {
+        font-size: 30px;
+    }
+
+    .cta-content p {
+        font-size: 13px;
+    }
+
+    
+}
