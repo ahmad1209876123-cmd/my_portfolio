@@ -1307,7 +1307,7 @@ textarea {
 
     .stats-grid {
         grid-template-columns:
-            repeat(3, 1fr);
+            repeat(2, 1fr);
 
         gap: 25px 20px;
     }
@@ -1513,20 +1513,15 @@ textarea {
 
 
     /* Stats */
+.stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
 
-    .stats-grid {
-        grid-template-columns:repeat(3,1fr); 
-
-        gap: 10px;
-    }
-
-
-   
-
-    .stat-item {
+.stat-item {
     justify-content: center;
     gap: 8px;
-    padding: 12px 5px;
+    padding: 14px 5px;
 }
 
 .stat-icon {
