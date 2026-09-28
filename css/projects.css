@@ -595,6 +595,21 @@ a {
 
 @media (max-width: 480px) {
 
+        /* Dental Project Image - Mobile */
+
+    .project-card:first-child .project-image {
+        height: 190px;
+        overflow: hidden;
+    }
+
+    .project-card:first-child .project-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+
     .container {
         width: 92%;
     }
