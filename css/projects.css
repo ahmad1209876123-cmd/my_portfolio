@@ -546,7 +546,7 @@ a {
     }
 
     .projects-hero-content{
-        padding: 15px ;
+        padding: 25px ;
     }
 
     
@@ -604,7 +604,11 @@ a {
     }
 
     .projects-hero {
-        padding: 65px 0;
+        padding: 75px 0;
+    }
+
+    .projects-hero-content{
+        padding: 25px ;
     }
 
     .projects-hero h1 {

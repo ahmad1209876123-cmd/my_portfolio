@@ -124,9 +124,9 @@ background:
 }
 
 .services-hero-content {
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 max-width: 820px;
-padding: 90px 0;
+padding: 80px 0;
 }
 
 .section-badge {
@@ -562,6 +562,7 @@ transform: translateX(4px);
 
 
 .services-hero-content {
+    margin-top: 35px;
     padding: 75px 0;
 }
 
@@ -643,6 +644,7 @@ transform: translateX(4px);
 }
 
 .services-hero-content {
+    margin-top: 35px;
     padding: 60px 0;
 }
 

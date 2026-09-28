@@ -143,7 +143,7 @@ textarea {
 .about-hero {
     position: relative;
 
-    padding: 90px 0 100px;
+    padding: 100px 0 100px;
 
     background-image:
         linear-gradient(
@@ -163,6 +163,7 @@ textarea {
 /* ---------- Hero Content ---------- */
 
 .about-hero-content {
+    padding: 17px;
     position: relative;
     z-index: 2;
 
