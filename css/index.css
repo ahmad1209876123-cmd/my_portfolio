@@ -412,6 +412,7 @@ textarea {
 
 .floating-card {
     position: absolute;
+    
 
     display: flex;
     align-items: center;
@@ -435,6 +436,7 @@ textarea {
 .floating-icon {
     width: 38px;
     height: 38px;
+   
 
     display: flex;
     align-items: center;
@@ -1305,7 +1307,7 @@ textarea {
 
     .stats-grid {
         grid-template-columns:
-            repeat(2, 1fr);
+            repeat(3, 1fr);
 
         gap: 25px 20px;
     }
@@ -1316,6 +1318,8 @@ textarea {
 
         padding-right: 0;
     }
+
+    
 
 
     /* About */
@@ -1511,15 +1515,33 @@ textarea {
     /* Stats */
 
     .stats-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns:repeat(3,1fr); 
 
-        gap: 18px;
+        gap: 20px;
     }
 
+
+   
 
     .stat-item {
-        justify-content: center;
-    }
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 5px;
+}
+
+.stat-icon {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+}
+
+.stat-item strong {
+    font-size: 18px;
+}
+
+.stat-item span {
+    font-size: 10px;
+}
 
 
     /* About */
